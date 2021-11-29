@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+	  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+	  
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text">Menu</div>
+      <ul>
+		 <li class="active"><a href="home.html">Home</a></li>
+        <li class="active"><a href="index.html">About</a></li>
+        <li>
+          <a href="#" class="feat-btn">Recipes
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="feat-show">
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+			  <li><a href="dinner.html">Dinner</a></li>
+			  <li><a href="desserts.html">Desserts</a></li>
+          </ul>
+        </li>
+       
+        <li><a href="contatcus.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+		
+		     <div class="navfooter">
+                 
+			  	  
+                <a href="sitemap.html"><p class="l1">Sitemap</p></a>
+                <p class="l1">Terms and Conditions</p>
+                <p class="l1">Privacy</p>
+              
+				  
+             </div>
+		  
+		   <div class="copyright-footer">
+			   
+			   <p id="f1">Copyright © 2020 Discovery, Inc. or its subsidiaries and affiliates. All rights reserved</p>
+			   
+		  </div>
+	
+		 </ul>
+    </nav>
+	    
+	<div class="banner">
+	  <img class ="banner-image" src="Images/blogger.jpg" alt="">
+	</div>  
+	  
+	  <div class="food-container">
+	  
+	    <h2>Chicken Arroz Caldo</h2>
+		  
+		  <p id="quote">"A lovely rice porrige meal for your morning breakfast"</p>
+		  
+		  <img src="Images/arroz-caldo.jpg" alt="" height="400px" width="auto">
+		  
+		  <h3 id="h1">Ingredients</h3>
+		  
+		   <ol id="list">
+		      <li>2 Tablespoons of Olive oil</li>
+			   <li>1 diced onion</li>
+			   <li>2 cloves garli, crushed</li>
+			   <li>1 piece of ginger (2inch), peeled and thinly sliced</li>
+			   <li>2 pounds of chicken wings, split and tips discarded</li>
+			   <li>1 tablespoon fish sauce</li>
+			   <li>5 cups of chicken broth</li>
+			   <li>1 cup glutinous rice</li>
+			   <li>salt and pepper</li>
+			   <li>1 green onion, chopped</li>
+			   <li>1 teapsoon of fish sauce (optional)</li>
+			   <li>1 lemon sliced (optional)</li>
+		   </ol>
+		  
+		  <hr>
+		  
+		  <h3 id="h2">Instructions</h3>
+		  
+		  <p class="instructions">1. Heat the olive oil in a large pot over medium heat; cook and stir the onion, garlic, and ginger in the hot oil until fragrant, about 5 minutes. Add the chicken wings; cook and stir together for 1 minute. Stir the fish sauce into the pot, cover, and cook another 2 minutes.</p>
+		  
+		  <p class="instructions">2. Pour the chicken broth into the pot. Add the sweet rice and stir. Bring the mixture to a boil; cover and cook for 10 minutes, stirring occasionally to assure the rice is not sticking to the bottom of the pot. Season with salt and pepper. Garnish with the green onion, and serve with lemon slices and additional fish sauce, if desired.</p>
+	  
+	  </div>
+	  
+  
+	  
+    <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+  </body>
+</html>

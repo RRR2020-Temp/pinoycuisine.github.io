@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+	  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+	  
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text">Menu</div>
+      <ul>
+		 <li class="active"><a href="home.html">Home</a></li>
+        <li class="active"><a href="index.html">About</a></li>
+        <li>
+          <a href="#" class="feat-btn">Recipes
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="feat-show">
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+			  <li><a href="dinner.html">Dinner</a></li>
+			  <li><a href="desserts.html">Desserts</a></li>
+          </ul>
+        </li>
+       
+        <li><a href="contatcus.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+		
+		     <div class="navfooter">
+                 
+			  	  
+                <a href="sitemap.html"><p class="l1">Sitemap</p></a>
+                <p class="l1">Terms and Conditions</p>
+                <p class="l1">Privacy</p>
+              
+				  
+             </div>
+		  
+		   <div class="copyright-footer">
+			   
+			   <p id="f1">Copyright © 2020 Discovery, Inc. or its subsidiaries and affiliates. All rights reserved</p>
+			   
+		  </div>
+	
+		 </ul>
+    </nav>
+	    
+	<div class="banner">
+	  <img class ="banner-image" src="Images/blogger.jpg" alt="">
+	</div>  
+	  
+	  <div class="food-container">
+	  
+	    <h2>Tocino</h2>
+		  
+		  <p id="quote">"Similar to bacon or ham, this sweet dish is best served with a morning breakfast"</p>
+		  
+		  <img src="Images/arroz-caldo.jpg" alt="" height="400px" width="auto">
+		  
+		  <h3 id="h1">Ingredients</h3>
+		  
+		   <ol id="list">
+		      <li>4 and a half pounds of boneless pork shoulder</li>
+			   <li>2 cups of brown suger</li>
+			   <li>3 tablespoons seasoned salt</li>
+			   <li>1 tablespoon garlic salt</li>
+			   <li>1 tablespoon ground black pepper</li>
+			   <li>1 tablespoon curing salt</li>
+			   <li>5 cups of chicken broth</li>
+			   <li>cooking oil</li>
+		   </ol>
+		  
+		  <hr>
+		  
+		  <h3 id="h2">Instructions</h3>
+		  
+		  <p class="instructions">1. Cut the pork into thin slices measuring about 4-inches square; smaller pieces are fine.</p>
+		  
+		  <p class="instructions">2. Stir the brown sugar, seasoned salt, garlic salt, pepper, and curing salt together in a bowl; sprinkle each of the slices of pork with the mixture. Place the pork slices flat in a large container with a cover. Let them sit in the refrigerator 3 to 4 days before using.</p>
+		  
+		  <p class="instructions">3. Combine the desired amount of the pork with enough water to cover in a large non-stick skillet and bring to a boil for about 5 minutes. Drain and discard the water. Dry the pan completely.</p>
+		  
+		  <p class="instructions">4. Heat the oil in the skillet over medium heat; fry the pork slices in the hot oil until lightly browned, 1 to 2 minutes per side.</p>
+	  
+	  </div>
+	  
+    <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+  </body>
+</html>

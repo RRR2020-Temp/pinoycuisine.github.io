@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+	  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+	  
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text">Menu</div>
+      <ul>
+		 <li class="active"><a href="home.html">Home</a></li>
+        <li class="active"><a href="index.html">About</a></li>
+        <li>
+          <a href="#" class="feat-btn">Recipes
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="feat-show">
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+			  <li><a href="dinner.html">Dinner</a></li>
+			  <li><a href="desserts.html">Desserts</a></li>
+          </ul>
+        </li>
+       
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+		
+		     <div class="navfooter">
+                 
+			  	  
+                <a href="sitemap.html"><p class="l1">Sitemap</p></a>
+                <p class="l1">Terms and Conditions</p>
+                <p class="l1">Privacy</p>
+              
+				  
+             </div>
+		  
+		   <div class="copyright-footer">
+			   
+			   <p id="f1">Copyright © 2020 Discovery, Inc. or its subsidiaries and affiliates. All rights reserved</p>
+			   
+		  </div>
+	
+		 </ul>
+    </nav>
+	    
+	<div class="banner">
+	  <img class ="banner-image" src="Images/blogger.jpg" alt="">
+	</div>  
+	  
+	  <div class="recent">
+		  <h2>Categories</h2>
+	  </div>
+	  
+	  <div class="grid-container">
+		  
+		  <div class="col-1">
+			  
+			  <a href="breakfast.html"><img src="Images/arroz-caldo2.jpg" alt="" width="400px" height="300px" class="r1"></a>
+			  
+				   <div class="overtext">Breakfast</div>
+			  
+		  </div>
+		  
+		   <div class="col-2">
+			   
+			   <a href="lunch.html"><img src="Images/chicken-adobo.jpg" alt="" width="400px" height="300px" class="r1"></a>
+			   
+			   <div class="overtext">Lunch</div>
+			   
+		  </div>
+		  
+		   <div class="col-3">
+			   
+			   <a href="dinner.html"><img src="Images/Tinola.jpg" alt="" height="300px" width="400px" class="r1"></a>
+			   
+			  
+			    <div class="overtext">Dinner</div>
+		
+		  
+		  </div>
+		   <div class="col-4">
+			   
+			   <a href="desserts.html"><img src="Images/Turron.jpg" alt="" width="400px" height="300px" class="r1"></a>
+			   
+			   <div class="overtext">Dessert</div>
+		  
+		  </div>
+	  </div>
+	  
+    <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+  </body>
+</html>
